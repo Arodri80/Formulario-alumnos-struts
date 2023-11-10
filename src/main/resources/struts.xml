@@ -17,7 +17,12 @@
         <action name="invoice" class="org.demo.actions.InvoiceAction" method="execute">
             <result name="success">wellcome.jsp</result>
             <param name="invoiceBean"  />
+            <result name="input">registryForm.jsp</result>
         </action>
+        <action name="processInvoice" class="org.demo.actions.InvoiceAction" method="processInvoice">
+            <result name="success">wellcome.jsp</result>
+        </action>
+
 
 
 
