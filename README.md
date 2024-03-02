@@ -1,4 +1,4 @@
-struts2-jetty-demo
-==================
+struts2
 
-Ejemplo Struts 2. Curso Java.
+Ejemplo Struts 2. Ejercicio alumnos
+
