@@ -10,8 +10,8 @@
 
     <package name="org.demo.actions" namespace="/" extends="struts-default">
 
-        <action name="menu" class="org.demo.actions.Menu" method="execute">
-            <result name="success">menu.jsp</result>
+        <action name="index" class="org.demo.actions.Index" method="execute">
+            <result name="success">index.jsp</result>
         </action>
 
         <action name="registry" class="org.demo.actions.RegistryAction" method="execute">
@@ -20,11 +20,16 @@
 
         <action name="invoice" class="org.demo.actions.InvoiceAction" method="execute">
             <result name="success">wellcome.jsp</result>
+            <result name="input">menu.jsp</result>
             <param name="invoiceBean"  />
             <result name="input">registryForm.jsp</result>
         </action>
         <action name="processInvoice" class="org.demo.actions.InvoiceAction" method="processInvoice">
             <result name="success">wellcome.jsp</result>
+        </action>
+        <action name="verLista" class="org.demo.actions.InvoiceAction" method="verLista">
+            <result name="success">wellcome.jsp</result>
+            <result name="input">wellcome.jsp</result>
         </action>
 
 

@@ -4,56 +4,43 @@ import java.util.Date;
 
 public class InvoiceBean {
 
-    private String subject;
+    private String nombre;
 
-    private Double importeBruto;
+    private String apellidos;
 
-    private Date dateFrom;
-    private Date dateTo;
+    private String dni;
+    private Date nace;
 
-    private Double importeBrutoConIVA;
-
-
-
-
-    public Date getDateFrom() {
-        return dateFrom;
+    public Date getNace() {
+        return nace;
     }
 
-    public void setDateFrom(Date dateFrom) {
-        this.dateFrom = dateFrom;
+    public void setNace(Date nace) {
+        this.nace = nace;
     }
 
-    public Date getDateTo() {
-        return dateTo;
+    public String getNombre() {
+        return nombre;
     }
 
-    public void setDateTo(Date dateTo) {
-        this.dateTo = dateTo;
+   public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
 
-    public String getSubject() {
-        return subject;
+    public String getApellidos() {
+        return apellidos;
     }
 
-   public void setSubject(String subject) {
-        this.subject = subject;
+    public void setApellidos(String apellidos) {
+        this.apellidos = apellidos;
     }
 
-    public Double getImporteBruto() {
-        return importeBruto;
+    public String getDni() {
+        return dni;
     }
 
-    public void setImporteBruto(Double importeBruto) {
-        this.importeBruto = importeBruto;
-    }
-
-    public Double getImporteBrutoConIVA() {
-        return importeBrutoConIVA;
-    }
-
-    public void setImporteBrutoConIVA(Double importeBrutoConIVA) {
-        this.importeBrutoConIVA = importeBrutoConIVA;
+    public void setDni(String dni) {
+        this.dni = dni;
     }
 
 

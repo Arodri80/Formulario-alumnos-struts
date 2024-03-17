@@ -18,38 +18,40 @@
   <table>
   <tr>
       <td class="evenRow">
-        <s:fielderror fieldName = "invoiceBean.subject" />
-        <s:text name="form.subject.message"/>
-        <s:textfield id="subject" name="invoiceBean.subject"/>
+        <s:fielderror fieldName = "invoiceBean.nombre" />
+        <s:text name="form.nombre.message"/>
+        <s:textfield id="nombre" name="invoiceBean.nombre"/>
       </td>
     </tr>
-  <tr>
-      <td class="evenRow">
-        <s:fielderror fieldName = "invoiceBean.dateFrom" />
-        <s:text name="form.fromDate.message"/>
-        <sx:datetimepicker id="dateFrom" name="invoiceBean.dateFrom"/>
-      </td>
-    </tr>
-  <tr>
-    <td class="evenRow">
-       <s:fielderror fieldName = "invoiceBean.dateTo" />
-       <s:text name="form.toDate.message"/>
-       <sx:datetimepicker id="dateTo" name="invoiceBean.dateTo" />
-    </td>
-
-  </tr>
-  <tr>
+     <tr>
+          <td class="evenRow">
+            <s:fielderror fieldName = "invoiceBean.apellidos" />
+            <s:text name="form.apellidos.message"/>
+            <s:textfield id="apellidos" name="invoiceBean.apellidos"/>
+          </td>
+        </tr>
+   <tr>
         <td class="evenRow">
-          <s:fielderror fieldName = "invoiceBean.importeBruto" />
-          <s:text name="form.importeBruto.message"/>
-          <s:textfield id="importeBruto" name="invoiceBean.importeBruto"/>
+          <s:fielderror fieldName = "invoiceBean.dni" />
+          <s:text name="form.dni.message"/>
+          <s:textfield id="dni" name="invoiceBean.dni"/>
         </td>
       </tr>
   <tr>
-    <td class="evenRow">
+      <td class="evenRow">
+        <s:fielderror fieldName = "invoiceBean.nace" />
+        <s:text name="form.nace.message"/>
+        <sx:datetimepicker id="nace" name="invoiceBean.nace"/>
+      </td>
+    </tr>
+  <tr>
+  <td class="evenRow">
         <s:submit align="left" value="Enviar"/>
     </td>
   </tr>
+
+  <!-- Botón para volver al menú -->
+      <s:a href="menu.jsp">Volver al Menú</s:a>
   </table>
 </s:form>
 
