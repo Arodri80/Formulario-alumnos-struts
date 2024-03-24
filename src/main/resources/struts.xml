@@ -31,6 +31,13 @@
             <result name="success">wellcome.jsp</result>
             <result name="input">wellcome.jsp</result>
         </action>
+        <action name="menu" class="org.demo.actions.Menu">
+            <result name="success">menu.jsp</result>
+        </action>
+        <action name="buscarEstudiante" class="org.demo.actions.BuscarEstudianteAction" method="buscarPorDni">
+            <result name="success">resultadoExitoso.jsp</result>
+            <result name="error">error.jsp</result>
+        </action>
 
 
 

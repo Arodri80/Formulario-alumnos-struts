@@ -16,5 +16,10 @@
     <s:form action="verLista">
         <s:submit value="Ver Listado de Alumnos Registrados"/>
     </s:form>
+   <h2>Buscar Estudiante por DNI</h2>
+       <s:form action="buscarEstudiante" method="post">
+           <s:textfield label="DNI" key="dni" name="dni" />
+           <s:submit value="Buscar" />
+       </s:form>
 </body>
 </html>
